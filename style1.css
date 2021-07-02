@@ -1,0 +1,36 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+ul
+{
+    background-color:#fff000 ;
+    margin:0 auto;
+    width: 960px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    
+ }
+li
+{
+    background-color:#990000;
+    width: 20%;
+    height: 100px;
+    float:left;
+    margin:  15px;
+    list-style-type: none;
+    line-height: 100px;
+}  
+ul::after,
+ul::before
+{
+    content:"";
+    display:block;
+    width: 100%;
+    clear: both;
+} 
+

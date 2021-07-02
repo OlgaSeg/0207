@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+
+article {
+    width: 600px;
+    height: 300px;
+    background-color: #999;
+    margin: 0 auto;
+}
+
+h1 {
+    inline-size: 200px;
+    ;
+    margin: 50px 0 0 -20px;
+    border-top: 2px solid #990000;
+    border-left: 2px solid #990000;
+    border-bottom: 2px solid #990000;
+    background-color: #990000;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: solid 12px #a81010;
+    border-left: solid 20px transparent;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: solid 29px #990000;
+    border-bottom: solid 29px #990000;
+    border-right: solid 29px transparent;
+    position: absolute;
+    right: -29px;
+    top: -2px;
+}
+
+div {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(190, 212, 236);
+    margin: 0 auto;
+    position: relative;
+}
+
+div::before 
+{
+    content: "";
+    display: block;
+    width: 0;
+    height:0;
+    border-top: solid 150px transparent;
+    border-bottom: solid 150px transparent;
+    border-right: solid 150px #3b1af1;
+    position: absolute;
+    right: 200px;
+    top: 0px;
+}
+div::after
+{
+    content: "";
+    display: block;
+    width: 0;
+    height:0;
+    border-top: solid 150px transparent;
+    border-bottom: solid 150px transparent;
+    border-right: solid 150px #3b1af1;
+    position: absolute;
+    right: 200px;
+    top: 0px;
+}
